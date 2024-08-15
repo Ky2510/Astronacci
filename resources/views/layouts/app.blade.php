@@ -63,7 +63,7 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('home') }}">Home</a>
                         </li>
-                        @if(auth()->user()->role === "B" && auth()->user()->role === "C")
+                        @if(auth()->user()->role === "B" || auth()->user()->role === "C")
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('video.index') }}">My Video</a>
                         </li>
